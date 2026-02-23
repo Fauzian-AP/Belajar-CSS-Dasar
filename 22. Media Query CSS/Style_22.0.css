@@ -1,0 +1,44 @@
+/*
+CSS Media Query
+Untuk memungkinkan tampilan wedside yang responsive ( Dapat menyesuaikan tampilan, tata ukuran layar yang mendesak / kecil dari perangkat yang di gunakan user)
+*/
+
+/*
+Untuk dapat menggunakan CSS Media Quary dapat menggunakan kode berikut :
+
+@media only screen and ( Pengaturan style dan nilai nya )
+*/
+
+/* Versi HP */
+@media only screen and (max-width:500px) {
+/* jika di bahasakan :
+Jika Ukuran panjang layar maksimal 500px, jalankan style CSS ini */
+  .box {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+  }
+}
+
+/* Versi Tablet */
+@media only screen and (min-width:600px) {
+/* jika di bahasakan :
+Jika Ukuran panjang layar minimal 600px, jalankan style CSS ini */
+  .box {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+  }
+}
+
+/* Versi Desktop */
+@media only screen and (min-width:700px) {
+    .box {
+      width: 100%;
+      height: 200px;
+      background-color: yellow;
+    }
+  }
+  
+
+

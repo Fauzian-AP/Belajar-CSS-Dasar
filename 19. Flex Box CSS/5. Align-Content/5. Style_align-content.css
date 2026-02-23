@@ -1,0 +1,93 @@
+/* 
+Align-content
+Mengatur peratan / kesejajaran barisan item di dalam container secara vertical ( atas / bawah ), dengan syarat item yang ada di dalam container harus lebih dari stu baris 
+*/
+.Box-1, .Box-2, .Box-3, .Box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+}
+/* 
+Terdapat nilai di dalam style align-content yaitu :
+*/
+/* 
+1. Center ( Mengatur kesejajaran baris item di dalam container dan membuat sejajar di tengah secara vertical ) */
+.container1 {
+  width: 500px;
+  height: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Harus ada style flex-warp dengan niali ( warp ) agar style align-content dapat di jalankan */
+  flex-wrap: wrap;
+  /* Align-content dengan nilai ( Center ) */
+  align-content: center;
+}
+/* 
+2. Flex-start ( Mengatur kesejajaran baris item di dalam container dan membuat nya berada di atas ) */
+.container2 {
+  width: 500px;
+  height: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Harus ada style flex-warp dengan niali ( warp ) agar style align-content dapat di jalankan */
+  flex-wrap: wrap;
+  /* Align-content dengan nilai ( Flex-start ) */
+  align-content: flex-start;
+}
+/* 
+3. Flex-end ( Mengatur kesejajaran baris item di dalam container dan membuat nya berada di bawah ) */
+.container3 {
+  width: 500px;
+  height: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Harus ada style flex-warp dengan niali ( warp ) agar style align-content dapat di jalankan */
+  flex-wrap: wrap;
+  /* Align-content dengan nilai ( Flex-end ) */
+  align-content: flex-end;
+}
+/* 
+4. Stretch ( Mengatur kesejajaran baris item di dalam container dan membuat ) */
+.container4 {
+  width: 500px;
+  height: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Harus ada style flex-warp dengan niali ( warp ) agar style align-content dapat di jalankan */
+  flex-wrap: wrap;
+  /* Align-content dengan nilai ( stretch ) */
+  align-content: stretch;
+}
+/* 
+5. Space-between ( Mengatur kesejajaran baris item di dalam container dan membuat margin di setiap item jaraknya sama dan sisi Vertical ( atas dan bawah ) tidak ada ruang margin ) */
+.container5 {
+  width: 500px;
+  height: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Harus ada style flex-warp dengan niali ( warp ) agar style align-content dapat di jalankan */
+  flex-wrap: wrap;
+  /* Align-content dengan nilai ( Space-between ) */
+  align-content: space-between;
+}
+/* 
+6. Space-around ( Mengatur kesejajaran baris item di dalam container dan membuat margin di setiap item jaraknya sama dan sisi Vertical ( atas dan bawah ) memiliki ruang margin yang sama ) */
+.container6 {
+  width: 500px;
+  height: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Harus ada style flex-warp dengan niali ( warp ) agar style align-content dapat di jalankan */
+  flex-wrap: wrap;
+  /* Align-content dengan nilai ( Space-around ) */
+  align-content: space-around;
+}

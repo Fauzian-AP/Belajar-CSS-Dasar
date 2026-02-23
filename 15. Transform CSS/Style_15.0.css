@@ -1,0 +1,113 @@
+/* Style Tranform digunakan untuk membuat visual( Dapat di pindahkan, memperbesar, memutar, dan efek miring ) pada elemen HTML  
+
+Dalam style transform ada 4 nilai :  */
+
+/*
+1. Rotate ( untuk merotasi/ memutar elemen searah jarum jam (+) / sebaliknya (-) dengan satuan derajat ( deg ) */
+
+.kotak1 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+  /* Style transform dengan nilai rotate searah jarum jam  */
+  transform: rotate(45deg);
+}
+
+/* nilai rotate dapat di gunakan dalam pseudo class */
+.kotak2 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+}
+.kotak2:hover {
+  /* Saat kursor menyentuh area elemen, otomatis akan berotasi 45 derajat jarum jam karena di beri Style transform dengan nilai rotate  */
+  transform: rotate(45deg);
+}
+
+
+/* 
+2. Scale ( Digunakan untuk memperbesar (
++) /memperkecil (-) elemen dengan satuan desimal/pecahan */
+.kotak3 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+  /* Style transform dengan nilai scale diperbesar */
+  transform: scale(2);
+}
+
+/* Dapat digunakan juga pada pseudo class */
+.kotak4 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+}
+.kotak4:hover {
+  /* Saat kursor menyentuh area elemen, otomatis akan di perbesar karena di beri Style transform dengan nilai scale  */
+  transform: scale(2);
+}
+
+
+/* 
+3. Translate ( di gunakan untuk memindahkan / menggeser elemen HTML berdasarkan sumbu x (Horizontal) dan sumbu y (Vertical) demgan satuan angka / px */
+
+/* 
+Horizontal / Sumbu X bergeser di antara kanan (+) dan kiri (-)
+Vertical / Sumbu Y bergeser di antara atas (-) dan bawah (+) 
+*/
+
+.kotak5 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+  /* Style transform dengan nilai translate, akan bergeser di sumbu X ke kanan 50px */
+  transform: translate(50px);
+}
+
+/* Dapat digunakan pada pseudo class */
+.kotak6 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+}
+.kotak6:hover {
+  /* Style tranform dengan nilai translate dapat berisi 2 angka dengan 
+  nilai pertama ( Horizontal ) dan 
+  nilai kedua ( Vertical ) 
+  dapat bergeser miring karena nilai gabungan */
+  transform: translate(50px, 20px);
+}
+
+
+/* 
+4. Skew ( Digunakan untuk memiringkan elemen :
+Nilai 1 : ke kiri atas (+) dan ke kanan atas (-) dengan satuan derajat
+Nilai 2 : ke kiri bawah (+) dan ke kanan bawah (-) dengan satuan derajat */
+
+.kotak7 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+  /* Style transform dengan nilai skew miring ke kiri atas 20 derajat */
+  transform: skew(20deg);
+}
+
+/* Dapat di gunakan dalam pseudo class */
+.kotak8 {
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  margin: 30px auto;
+}
+.kotak8:hover {
+  transform: skew(30deg);
+}
+
+/* Agar peergerakan dari style tranform nya halus dan tidak kasar dapat di gunakan style transition */

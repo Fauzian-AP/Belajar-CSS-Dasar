@@ -1,0 +1,13 @@
+/* Style dari overflow untuk mengatur content atau isi elemen yang berlebih */
+article {
+  width: 300px;
+  height: 200px;
+  background-color: aqua;
+  /* Style overflow 
+  ada nilai-nilai untuk overflow :
+  auto ( akan di beri tombol scroll bar di samping agar di mudahkan ketika content nya banyak, jika tidak lebih scroll bar akan di hilangkan )
+  hidden ( sebagian content yang panjang akan di sembunyikan dan hanya akan menampilkan sesuai dengan lebar panjang dari elemen )
+  scroll ( Akan di beri tombol scroll bar di samping dan di bawah content pada elemen )
+  visible ( nilai pengaturan default/awal dari style overflow ) */
+  overflow: scroll;
+}

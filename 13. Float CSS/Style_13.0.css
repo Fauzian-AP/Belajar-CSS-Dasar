@@ -1,0 +1,28 @@
+/* Style float dapat berisi nilai :
+left ( untuk mengisi elemen di kanan)
+rigth ( untk mengisi elemen di kiri)
+Dll
+ */
+
+/* Untuk membuat panjang dan tinggi pembungkus nya */
+.container {
+  width: 800px;
+  margin: 30px auto;
+}
+
+/* Biasa-nya Style float digunakan pada gambar yang ingin di beri text di sampingnya */
+img {
+  width: 350px;
+  /* Style float dengan nilai Left */
+  float: left;
+  /* Style margin di kanan */
+  margin-right: 10px;
+}
+
+/* div dengan class clear, untuk kasus */
+.clear {
+  /* style clear dengan nilai left
+  Berguna untuk menghilangkan efek style float ( nilai clear harus sama dengan dengan nilai float. )
+   */
+  clear: left;
+}

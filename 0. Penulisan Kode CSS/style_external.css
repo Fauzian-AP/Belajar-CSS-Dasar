@@ -1,0 +1,13 @@
+/* Karena cara ini paling sering digunakan, maka untuk berikutnya untuk menghubungkan kode CSS ke HTML akan menggunakan metode external ini, oke */
+
+h1 {
+  color: crimson;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  color: orange;
+  text-align: center;
+  font-size: 18px;
+}

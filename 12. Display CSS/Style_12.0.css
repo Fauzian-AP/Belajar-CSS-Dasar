@@ -1,0 +1,23 @@
+/* Penjelasan di file html 12.0 
+Untuk mengubah display dari block menjadi inline / sebaliknya, bisa dengan menggunakan Property Style display  */
+
+/* Dari nilai inline ke nilai block */
+a,
+input {
+  /* style display dengan nilai Block */
+  display: block;
+  /* Style margin/jarak elemen di atas */
+  margin-top: 5px;
+}
+
+/* Dari nilai nilai block ke nilai inline */
+ul li {
+  /* Style display dengan nilai inline-block 
+  saat display dengan nilai inline, style margin, width, dan height tidak akan berpengaruh. Agar Style-style tadi dapat berpengaruh dengan merubah nilai menjad (inline-block) */
+  display: inline-block;
+  height: 200px;
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: aqua;
+}

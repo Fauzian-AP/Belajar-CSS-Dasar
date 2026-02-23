@@ -1,0 +1,127 @@
+/* 
+CSS Filter
+Untuk membuat efek filter pada elemen content seperti untuk mengedit foto/gambar.
+*/
+
+/* 
+Dalam style filter terdapat beberapa nilai yaitu :
+*/
+/*
+1. Blur ( dengan satuan 'PX' )
+Untuk membuat efek blur pada elemen content berdasarkan nilai satuan 'PX'
+*/
+.img1 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Blur' dengan satuan 3PX */
+  filter: blur(3px);
+}
+
+/*
+2. Brightness ( dengan satuan '%')
+Untuk membuat efek kecerahan pada elemen content yang di atur berdesarkan satuan '%'
+*/
+.img2 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Brightness' dengan satuan 400% */
+  filter: brightness(400%); 
+}
+
+/* 
+3. Contras (dengan satuan '%' )
+Untuk membuat efek ketajaman pada elemen content yang diatur berdasarkan satuan '%'
+*/
+.img3 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Contrast' dengan satuan 350% */
+  filter: contrast(350%); 
+}
+
+/* 
+4. Drop Shadow (nilai nya sama seperti box-shadow)
+Untuk membuat efek bayangan seperti style Box-shadow
+*/
+.img4 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Drop Shadow' dengan satuan 'PX' */
+  filter: drop-shadow(2px 2px 10px); 
+}
+
+/* 
+5. Grayscale ( dengan satuan '%' )
+Untuk membuat efek abu-abu pada elemen content yang diatur dengan satuan '%'
+*/
+.img5 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Grayscale' dengan satuan 100% */
+  filter: grayscale(100%); 
+}
+
+/* 
+6. Hue Rotate (dengan satuan 'deg' )
+Untuk membuat efek coloring/merubah warna pada element content yang diatur pada satuan derajat 'deg'
+*/
+.img6 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Hue-rotate' dengan satuan 100deg */
+  filter: hue-rotate(100deg); 
+}
+
+/* 
+7. invert ( dengan satuan '%' )
+Untuk membuat efek negatif pada elemen content yang diatur dengan satuan '%'
+*/
+.img7 {
+width: 500px;
+margin-left: 10px;
+margin-top: 10px;
+/* Style filter dengan nilai 'Invert' dengan satuan 100% */
+filter: invert(100%); 
+}
+
+/* 
+8. Opacity ( dengan satuan '%' )
+Untuk membuat efek transparasi/transparan pada elemen content yang diatur pada satuan '%'
+*/
+.img8 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Opacity' dengan satuan 40% */
+  filter: opacity(40%); 
+}
+
+/* 
+9. Saturate ( dengan satuan '%' )
+Untuk membuat efek ketajaman warna pada elemen content yang diatur dengan satuan '%'
+*/
+.img9 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Saturated' dengan satuan 500% */
+  filter: saturate(500%); 
+}
+
+/*
+10. Sepia (dengan satuan '%' )
+Untuk membuat efek foto lama / warna cream pada elemen content yang diatur dengan satuan '%'
+*/
+.img10 {
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+  /* Style filter dengan nilai 'Sepia' dengan satuan 100% */
+  filter: sepia(100%); 
+}

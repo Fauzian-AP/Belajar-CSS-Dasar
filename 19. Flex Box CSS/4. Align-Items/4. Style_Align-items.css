@@ -1,0 +1,70 @@
+/* 
+Align-items
+Mengatur perataan / kesejajaran antar Item secara Vertical ( atas / bawah )
+*/
+.Box-1, .Box-2, .Box-3, .Box-4 {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+}
+/* 
+Terdapat nilai di dalam style align-items yaitu :
+*/
+/* 
+1. Center ( Mengatur kesejajaran item yang ada didalam container dan membuat item sejajar di tengah secara vertical ) */
+.container1 {
+  width: 500px;
+  height: 300px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Align-items dengan nilai ( Center ) */
+  align-items: center;
+}
+/* 
+2. Flex-start ( Mengatur kesejajaran item yang ada didalam container dan membuat item berada di atas secara vertical ) */
+.container2 {
+  width: 500px;
+  height: 300px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Align-items dengan nilai ( Flex-start ) */
+  align-items: flex-start;
+}
+/* 
+3. Flex-end ( Mengatur kesejajaran item yang ada didalam container dan membuat item berada di bawah secara vertical ) */
+.container3 {
+  width: 500px;
+  height: 300px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Align-items dengan nilai ( Flex-end ) */
+  align-items: flex-end;
+}
+/* 
+4. Stretch ( Mengatur ) */
+.container4 {
+  width: 500px;
+  height: 300px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Align-items dengan nilai ( Stretch ) */
+  align-items: stretch;
+}
+/* 
+5. Baseline ( Mengatur ) */
+.container5 {
+  width: 500px;
+  height: 300px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Align-items dengan nilai ( Baseline ) */
+  align-items: baseline;
+}

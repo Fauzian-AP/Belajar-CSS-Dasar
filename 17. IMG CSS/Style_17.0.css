@@ -1,0 +1,23 @@
+/* Style untuk mengatur bakground gambar */
+body {
+  height: 1000px;
+  /* Style background-image untuk membuat gambar dari file/lain nya dapat dapat di jadikan sebagai background.
+  Dengan nilai url(alamat image) */
+  background-image: url(../File\ Gambar/Gambar_Juggernaut.jpeg);
+  /*  Agar gambar tidak menjadi banyak */
+  background-repeat: no-repeat;
+  /* Style background-size untuk membuat gambar background dapat terisi sesuai dengan panjang tinggi elemen 
+  Dengan nilai cover */
+  background-size: cover;
+  /* Style background-attachment: dengan nilai Fixed.Apabila tinggi web browser melebihi ukuran gambar, dan agar gambar sesuai dengan panjang web dan dapat mengikuti scrollbar dengan menggunakan style ini*/
+  background-attachment: fixed;
+}
+
+.imageroom {
+  width: 700px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url(../File\ Gambar/Battle\ epic\ Juggernaut\ VS\ TV\ Man.jpeg);
+  background-size: cover;
+}

@@ -1,0 +1,75 @@
+/* 
+Style Justify-content 
+Untuk mengatur perataan / kesejajaran di dalam container secara horizontal ( kanan / kiri )
+*/
+.Box-1, .Box-2, .Box-3, .Box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+}
+/*  
+Terdapat 6 nilai dari justify-content yaitu :
+*/
+/* 
+1. Center ( Mengatur perataan tengah pada item di dalam container ) */
+.container1 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Justify-content dengan nilai ( Center ) */
+  justify-content: center;
+}
+/* 
+2. Flex-end ( Mengatur perataan kanan pada item didalam container ) */
+.container2 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Justify-content dengan nilai ( Flex-end ) */
+  justify-content: flex-end;
+}
+/* 
+3. Flex-start ( Mengatur perataan kiri pada item didalam container ) */
+.container3 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Justify-content dengan nilai ( Flex-start ) */
+  justify-content: flex-start;
+}
+/* 
+4. Space-between ( Mengatur kesejajaran antar item didalam container dan akan menghasilkan margin yang sama di setiap item, dan tidak menyisakan ruang margin di sisi kanan dan kiri ) */
+.container4 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Justify-content dengan nilai ( Space-between ) */
+  justify-content: space-between;
+}
+/* 
+5. Space-around ( Mengatur kesejajaran antar item didalam container dan akan menghasilkan margin yang sama di setiap item, dan menyisakan sedikit ruang margin yang sama pada sisi kiri dan kanan ) */
+.container5 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Justify-content dengan nilai ( Space-around) */
+  justify-content: space-around;
+}
+/* 
+6. Space-evenly ( Mengatur kesejajaran antar item di dalam container dan akan menghasilkan margin yang sama pada setiap item dan juga pada sisi kanan dan kiri ) */
+.container6 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Justify-content dengan nilai ( Space-evenly ) */
+  justify-content: space-evenly;
+}

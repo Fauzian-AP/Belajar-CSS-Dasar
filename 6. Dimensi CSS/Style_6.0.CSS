@@ -1,0 +1,16 @@
+/* Dimensi CSS */
+
+/* Style pengturan panjang, lebar, dan tinggi elemen */
+
+.container {
+  /* style untuk mengatur alas/panjang atas dan bawah pada elemen */
+  width: 100%;
+  /* Style untuk mengatur tinggi kanan dan kiri elemen  */
+  height: 100px;
+  background-color: aqua;
+}
+.kotak {
+  width: 50%;
+  height: 100px;
+  background-color: aquamarine;
+}

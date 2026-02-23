@@ -1,0 +1,23 @@
+/* 
+Box-shadow
+Di gunakan untuk membuat efek bayangan pada elemen
+ */
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  margin: 50px auto;
+
+  /*
+  Letak syntaks nya :
+  box-shadow: offset-x offset-y blur-radius spread color 
+
+  Penjelasan :
+  Offset-x/y ( Untuk pengaturan letak / arah dari bayangan di belakang elemen )
+  Blur-radius ( Untuk mengatur blur dari bayangan elemen )
+  Spread ( Seberapa jauh arah bayangan )
+  Color ( Warna dari bayangan )
+  */
+  box-shadow: 10px 10px 30px 10px teal;
+}

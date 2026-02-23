@@ -1,0 +1,54 @@
+/* Style transition
+Digunakan untuk membuat efek perpindahan dari nilai awal ke nilai selanjutnya */
+
+/* Dalam style transition ada 4 pengaturan :
+
+1. tansition-duration ( digunakan untuk waktu / durasi dari efek transisi nya dengan hitungan detik/s ) 
+
+2. Transition-property ( digunakan untuk menentukan style yang akan di pakai untuk di transisi )
+   Nilai default / awal nya ALL / semua 
+
+3. Transition-delay ( digunakan untuk durasi / waktu delay / penundaan dari style transition dengan waktu detik/s )
+
+4. Transition-timing-fungtion ( digunakan untuk bagaimana efek transisi di jalankan )
+Nilai: ease ( pelan di awal-cepat di tengah-pelan lagi di akhir ) nilai default / awal  
+       ease-in ( cepat di awal-pelan ditengah-pelan di akhir )
+       ease-in-out ( sama seperti nilai ease tapi tidak sama )
+       ease-out ( pelan di awal-pelan di tengah-cepat di akhir )
+ */
+
+/* Dapat digunakan pada pseudo class */
+.kotak1 {
+  width: 300px;
+  height: 50px;
+  background-color: green;
+  margin: 100px;
+  /* 4 Style transition */
+  transition-duration: 1s;       
+  transition-property: width, background-color;    
+  transition-delay: 0.9s;
+  transition-timing-function: ease-in-out;
+}
+.kotak1:hover {
+  width: 900px;
+  background-color: teal;
+}
+
+/* 4 style terebut dapat di singkat dalam satu style */
+.kotak2 {
+  width: 300px;
+  height: 50px;
+  background-color: green;
+  margin: 100px;
+  /* Style transition dapat berisi 4 nilai dari 4 style berikut:
+  1. transition-duration: 1s;       
+  2. transition-property: all;    
+  3. transition-delay: 0.9s;
+  4. transition-timing-function: ease-in-out;
+  */
+  transition: 1s all 0.9s ease-in-out;
+}
+.kotak2:hover {
+  width: 400px;
+  transform: rotate(45deg);
+}

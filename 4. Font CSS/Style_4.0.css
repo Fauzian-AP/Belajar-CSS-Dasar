@@ -1,0 +1,21 @@
+/* Style untuk Font pada CSS */
+.P1 {
+  /* style font-family untuk merubah jenis font/huruf */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.P2 {
+  /* Style font-size untuk merubah ukuran dari font atau huruf */
+  font-size: 24px;
+}
+.P3 {
+  /* Style font-weight untuk merubah tebal tipis dari font/huruf */
+  font-weight: bold;
+}
+.P4 {
+  /* Style font-style untuk merubah font/huruf menjadi tercetak miring */
+  font-style: italic;
+}
+.P5 {
+  /* Style font-variant untuk mengubah varian dari font / huruf, seperti small caps */
+  font-variant: small-caps;
+}

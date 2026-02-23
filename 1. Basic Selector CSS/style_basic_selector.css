@@ -1,0 +1,52 @@
+/* Universal Selector (*)  -->  Style akan digunakan di semua elemen HTML */
+
+* {
+  margin: 5px 2px;
+}
+
+/* Tag atau Element Selector  -->  Style akan digunakan berdasarkan element HTML yg di pilih */
+
+h2 {
+  color: purple;
+}
+
+p {
+  color: gray;
+
+}
+
+/* Class selector (.)  -->  Style akan digunakan berdasarkan nama atribut 'class' yg ada pada HTML */
+
+.judul {    /* Untuk memanggil class selector dengan menuliskan titik(.) lalu nama class nya */
+  color: teal;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.deskripsi {
+  color: grey;
+}
+
+/* ID Selector (#)  -->  Style akan di gunakan berdasarkan nama atribut 'id' yg ada di HTML */
+
+#head { /* Untuk memanggil ID selector dengan menuliskan tanda pagar(#) lalu nama ID nya */
+  color: aqua;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#desc {
+  color: orange;
+}
+
+/* Grub selector pada tag selector dengan menuliskan koma(,) sebagai "dan" di CSS */
+/* h2,
+p {
+  color: black;
+} */
+
+/* grub selector pada class selector dengan cara menuliskan koma(,) dan menulisan class nya */
+.green1,
+.green2 {
+  color: green;
+}

@@ -1,0 +1,12 @@
+/* 
+List Style Type
+Untuk mengatur tipe dari penanda list
+*/
+
+ol {
+  list-style-type: lower-roman;
+}
+
+ul {
+  list-style-type: square;
+}

@@ -1,0 +1,24 @@
+table {
+  margin: 50px auto;
+  border-spacing: 0px;
+  /* Style border collapse dengan nilai collapse untuk membuat style border yang bertumpuk agar dapat dis sesuai kan*/
+  border-collapse: collapse;
+}
+
+th {
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid teal; 
+}
+
+
+/* pengaturan :nth-child(even) dengan nilai even untuk membuat pengaturan selang seling pada selector */
+tr:nth-child(even) {
+  background-color: bisque;
+}

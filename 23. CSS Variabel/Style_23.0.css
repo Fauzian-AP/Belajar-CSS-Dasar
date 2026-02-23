@@ -1,0 +1,40 @@
+/* 
+Variabel
+Tempat untuk menyimpan nilai dan dapat menggunakan nilai dari variabel tersebut jika memanggil nama dari variabel tersebut */
+
+/* 
+Untuk membuat variabel dalam CSS harus menggunakan :
+
+:root 
+--var-'Nama dari variabel' : 'Nilai dari variabel' ;
+
+Dan untuk menggunakan nilai dari variabel tersebut. yaitu seperti berikut :
+
+'Style': var( Nama dari variabel tersebut )
+
+*/
+
+/* Pseudo Calss 'root:' */
+:root {
+/* Nama variabel yang lebih dari 2 kata dapat menggunakan ' - ' */
+    --var-Warna-merah:#e00909;
+    --var-warna-ungu:#4b05bb;
+    --var-margin-top:50px;
+}
+.container {
+  width: 400px;
+  border: 2px solid var(--var-warna-ungu);
+  margin: 0 auto;
+  padding: 10px;
+}
+h1 {
+/* Cara menggunakan nilai dari variabel */
+  color: var(--var-Warna-merah);
+}
+p {
+  color: var(--var-warna-ungu);
+  margin-top: var(--var-margin-top);
+}
+span {
+  background-color: var(--var-Warna-merah);
+}

@@ -1,0 +1,49 @@
+/* 
+Flex-box 
+Pengaturan layout untuk mengatur posisi dan kesejajaran elemen / item yang ada di dalam container
+
+Flex-box memiliki 2 istilh yang harus di pahami, yaitu:
+
+container ( elemen HTML yang di dalam nya berisi beberapa elemen html / parent elemen )
+
+item ( elemen HTML yang berada di dalam parent elemen / chain elemen )
+*/
+
+/* 
+Style yang di butuhkan pada Flex-box adalah :
+Untuk Container :
+1. Display ( harus ada dan bernilai (FLEX) )
+2. Flex-wrap 
+3. Flex-direction 
+4. Justify-content
+5. Align-item 
+6. align-contect
+Untuk Item :
+1. Order 
+2. flex
+3. align-self
+
+Penjelasan ada di file CSS lain nya
+*/
+
+/* Parent elemen */
+.container {
+  width: 500px;
+  border: 3px solid;
+  margin: 50px auto;
+  /* Style display dengan nilai Flex harus ada */
+  display: flex;
+}
+
+/* Item */
+.Box-1,
+.Box-2,
+.Box-3,
+.Box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+}

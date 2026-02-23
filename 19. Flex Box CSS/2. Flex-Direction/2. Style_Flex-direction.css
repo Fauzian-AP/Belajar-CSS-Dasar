@@ -1,0 +1,52 @@
+/* 
+Style Flex-direction
+Untuk mengatur susunan dari Item di dalam container ( bisa secara horizontal / vertical ) 
+*/
+.Box-1, .Box-2, .Box-3, .Box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+}
+/* 
+Row ( Nilai default / awal ( Horizontal ) dari flex direction ) */
+.container1 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-deirection dengan nilai ( Row ) */
+  flex-direction: row;
+}
+/* 
+Row-reverse ( Nilai default / awal ( Horizontal ) deri flex direction, namun urutan nya menjadi terbalik ) */
+.container2 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-direction dengan nilai ( Row-reverse ) */
+  flex-direction: row-reverse;
+}
+/* 
+Collumn ( Setiap Item akan tersusun secara vertical ( dari atas ke bawah ) walau barisan nya belum penuh ) */
+.container3 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-direction dengan nilai ( Collumn ) */
+  flex-direction: column;
+}
+/* 
+Collumn-reverse ( Setiap Item akan tersusun secara vertical ( dari atas ke bawah ) walau barisan nya belum penuh, tetapi urutan Item nya terbalik ) */
+.container4 {
+  width: 500px;
+  border: 3px solid ;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-direction dengan nilai ( Collumn-reverse ) */
+  flex-direction: column-reverse;
+}

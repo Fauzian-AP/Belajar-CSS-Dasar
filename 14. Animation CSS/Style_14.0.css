@@ -1,0 +1,72 @@
+/* 
+Animation 
+Digunakan untuk membuat animasi pada elemen HTML
+Animation digunakan untuk membuat efek dari CSS lebih beragam /spesifik */
+
+/* 
+Style animation dengan transition berbeda yaitu :
+
+Transition digunakan untuk memperhalus efek dari style tsanform dan tidak efektif di gunakan jika ingin membuat efek yang detail
+
+Animation di gunakan untuk membuat efek yang detail/spesifik/banyak, dapat berisi banyak tahap dalam bentuk ( % ) seperti contoh 
+*/
+
+/* Penggunaan style animation dalam CSS */
+.animation1 {
+  width: 300px;
+  height: 70px;
+  background-color: green;
+  margin: 30px;
+  /* 
+  Style yang mengatur jalan nya animation
+   */
+  animation-name: Warna;                  /* Digunakan untuk memanggil nama dari efek animation */
+  animation-duration: 7s;                 /* Digunakan untuk menentukan durasi/waktu dari efek animation */
+  animation-timing-function: linear;      /* Digunakan untuk mengatur gerak cepat dari animasi */
+  animation-iteration-count: infinite;    /* Digunakan untuk jumlah perulangan dari animasi */
+  animation-direction: alternate;         /* Digunakan untuk mengubah arah dari animasi */
+}
+/* Penulisan dari style animation dapat di singkat seperti berikut : */
+.animation2 {
+  width: 300px;
+  height: 70px;
+  background-color: teal;
+  margin: 30px;
+  /* Bentuk singkat nya */
+  animation: Warna 7s linear infinite alternate;
+}
+
+/* Untuk membuat animasi di CSS dapat di buat seperti berikut : */
+
+/*
+@keyframes ( Tanda akan di buat animasi )
+Warna ( Adalah nama ( Nama bisa bebas/terserah ) dari animasi yang akan di buat, karena agar animasi bisa di jalankan pada elemen, jadi ini di perlukan )
+*/
+@keyframes Warna {
+
+  /*
+  Setiap tahap dapat di isi dengan style-style CSS yang lain
+  Dan dapat di isi banyak tahap tergantung kebutuhan
+  */
+
+  0% {
+    background-color: green;
+    width: 100px;
+  }
+  30% {
+    background-color: blue;
+    width: 300px;
+  }
+  50% {
+    background-color: yellow;
+    width: 500px;
+  }
+  80% {
+    background-color: red;
+    width: 700px;
+  }
+  100% {
+    background-color: black;
+    width: 900px;
+  }
+}

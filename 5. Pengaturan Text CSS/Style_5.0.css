@@ -1,0 +1,88 @@
+/* Pengaturaan style Text-decoration */
+.one {
+  /* style untuk membuat garis di bawah font/huruf */
+  text-decoration: underline;
+}
+.two {
+  /* Style untuk membuat garis di atas font/huruf */
+  text-decoration: overline;
+}
+.three {
+  /* Style untuk membuat garis di tengah garis atau membelah font/huruf */
+  text-decoration: line-through;
+}
+a {
+  /* Style untuk membuat garis menghilang */
+  text-decoration: none;
+  color: black;
+}
+
+
+/* pengaturan style text-tranform */
+
+/* membuat awal kata pada font/huruf pada paragraf menjadi capital */
+.capital {
+  text-transform: capitalize;
+}
+
+/* Membuat semua font/huruf pada paragraf menjadi capital */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* membuat font/huruf pada paragraf menjadi huruf kecil */
+.lowercase {
+  text-transform: lowercase;
+}
+
+
+/* pengaturan Style text-align */
+
+/* text akan berada di kiri webside */
+.H1 {
+  text-align: left;
+}
+/* text akan berada di tengah webside */
+.H2 {
+  text-align: center;
+}
+/* text akan berada di kanan webside */
+.H3 {
+  text-align: right;
+}
+/* Text akan berada di rata kanan dan kiri */
+p {
+  text-align: justify;
+}
+
+
+/* Pengaturan spasi pada paragraf */
+
+/* line-height untuk membuat jarak spasi sesuai ukuran */
+.p1 {
+  line-height: 40px;
+}
+
+
+/* Membuat penggeseran pada awal paragraf sesuai dengan ukuran */
+.p2 {
+  text-indent: 40px;
+}
+
+
+/* Membuat text menjadi berwarna */
+.Color {
+  color: red;
+}
+
+
+/* Membuat setiap huruf menjadi berjarak / spasi */
+.letter {
+  letter-spacing: 10px;
+}
+
+
+/* Membuat setiap kata menjadi berjarak / spasi */
+.word {
+  word-spacing: 10px;
+}

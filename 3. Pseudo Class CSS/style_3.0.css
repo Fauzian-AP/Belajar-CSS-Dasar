@@ -1,0 +1,25 @@
+/* Pseudo Class :link dapat digunakan untuk mengubah setelan dari link nya */
+.Link:link {
+  color: red;
+}
+/* Pseudo class :visited dapat di gunakan untuk menandai bahwa link nya sudah pernah di kunjungi */
+.Link:visited {
+  color: green;
+}
+/* Pseudo class :hover dapat digunakan untuk kursor mouse berada area elemen */
+.Link :hover {
+  background-color: black;
+  color: white;
+}
+/* Pseudo class :active akan aktif ketika elemen di klik */
+.Link :active {
+  color: yellow;
+}
+/* Contoh */
+ul li a:link {
+  color: red;
+}
+ul li a:hover {
+  background-color: black;
+  color: white;
+}

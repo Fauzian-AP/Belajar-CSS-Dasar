@@ -1,0 +1,45 @@
+/* 
+Style Flex-warp 
+Digunakan untuk menetapkan Item dalam berada di dalam 1 baris / tidak di dalam 1 baris ( menurun )
+*/
+/* 
+Dalam style flex-warp terdapat nilai berikut :
+*/
+.Box-1, .Box-2, .Box-3, .Box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+}
+/* 
+1. Nowrap ( Membuat elemen container untuk menampung Item di dalam satu baris, walau ukuran item akan berubah ) */
+.container1 {
+  width: 500px;
+  border: 3px solid;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-warp dengan nilai ( nowrap ) */
+  flex-wrap: nowrap;
+}
+/* 
+2. Warp ( Membuat elemen container ketika elemen Item nya sudah penuh pada baris pertama, maka akan turun ke bawah dan membuat baris yang baru ) */
+.container2 {
+  width: 500px;
+  border: 3px solid;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-wrap dengan nilai ( wrap ) */
+  flex-wrap: wrap;
+}
+/* 
+3. Warp-reverse ( Item akan membuat baris baru saat baris pertama sudah penuh, tetapi baris-baris tersebut di tukar tempatnya ) */
+.container3 {
+  width: 500px;
+  border: 3px solid;
+  margin: 50px auto;
+  display: flex;
+  /* Flex-wrap dengan nilai ( wrap-reverse ) */
+  flex-wrap: wrap-reverse;
+}

@@ -1,0 +1,19 @@
+/* 
+Font Awesome dapat di Style oleh CSS
+
+Dapat menggunakan Class kategori nya */
+.fas {
+  /* Dapat di atur dengan style untuk Font */
+  font-size: 50px;
+  color: blue;
+}
+
+/* atau lebih spesifik dapat menggunakan Class jenis icon nya */
+.fa-youtube {
+  font-size: 60px;
+  color: teal;
+}
+.fa-tiktok {
+  font-size: 60px;
+  color: aqua;
+}

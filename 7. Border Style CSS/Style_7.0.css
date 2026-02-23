@@ -1,0 +1,100 @@
+/* Style untuk border/garis */
+.HR1 {
+  /* untuk panjang border */
+  border-width: 5px;
+  /* untuk bentuk/gaya daari border */
+  border-style: double;
+  /* warna dari border */
+  border-color: aqua;
+}
+
+.HR2 {
+  border-width: 5px;
+  /* Style dari border ada banyak berikut :
+  solod ( border berbentuk garis hitam tebal )
+  double ( border baebentuk garis tebal dan berisi double )
+  dashed ( border berbentuk garis kotak kotak tebal dan berjarak )
+  dotted ( border berbentuk garis titik dua tebal dan berjarak )
+  groove ( border berbentuk garis abu-abu tebal dan berisi double )
+  hidden/inherit/initial/none ( border akan menghilang ) 
+  inset ( border berbentuk abu-abu/pengaturan default ) */
+  border-style: solid;
+}
+
+.HR3 {
+  /* Style border dapat menyimpan 3 nilai di dalam nya yaitu : 
+  nilai 1 untuk ketebalan border nya
+  nilai 2 untuk styke dari border nya 
+  nilai 3 untuk warna dari boder nya */
+  border: 1px solid crimson;
+}
+
+/* pengaturan setiap sisi border */
+.lv {
+  height: 200px;
+  width: 200px;
+  /* setiap sisi garis dapat di ubah menjadi berbeda dengan style berikut */
+
+  /* border sisi kiri */
+  border-left-style: solid;
+  /* border sisi atas */
+  border-top: double;
+  /* border sisi kanan */
+  border-right-style: dashed;
+  /* border sisi bawah */
+  border-bottom-style: dotted;
+}
+
+/* berbentuk persegi di awal */
+.persegi {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+}
+
+/* style border radius */
+.kotak1 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid crimson;
+  margin: auto;
+  /* style border radius (sudut) */
+  border-radius: 20px;
+}
+
+/* lingkaran */
+.lingkaran {
+  width: 100px;
+  height: 100px;
+  border: 4px solid red;
+  margin: auto;
+  /* dapat menjadi bulat jika radius/sudut nya mencapai 100% */
+  border-radius: 100%;
+}
+
+/* pengaturan sisi border radius */
+.kotak2 {
+  width: 200px;
+  height: 200px;
+  border: 5px solid brown;
+  margin: auto;
+  /* sudut atas kiri */
+  border-top-left-radius: 50px;
+  /* sudut atas kanan */
+  border-top-right-radius: 60px;
+  /* sudut bawah kiri */
+  border-bottom-left-radius: 100px;
+  /* sudut bawah kanan */
+  border-bottom-right-radius: 40px;
+}
+
+/* atau bisa dengan cara berikut */
+.kotak3 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border: 5px solid aqua;
+  /* nilai 1 ( sudut kanan atas dan bawah )
+     nilai 2 ( sudut kiri atas dan bawah ) */
+  border-radius: 50px 100px;
+}

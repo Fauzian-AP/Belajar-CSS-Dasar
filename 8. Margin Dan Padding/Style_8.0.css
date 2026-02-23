@@ -1,0 +1,34 @@
+/* Style untuk mengatur jarak elemen dan dalam elemen */
+
+/* setiap nilai mengikuti arah jarum jam sesuai urutan nya*/
+
+/* cara pertama dengan menghapus semua pengaturan default padding dan margin pada semua tag html,tanda bintang(*) sebagai tanda penanda untuk pengaturan semua elemen */
+* {
+  /* Padding adalah jarak di dalam elemen antara isi dengan garis tepi */
+  padding: 0px;
+  /* Margin adalah jarak antara 2 elemen atau lebih */
+  margin: 0px;
+}
+.p1 {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+
+  /* padding */
+  padding-left: 20px; /* padding kiri*/
+  padding-top: 30px; /* padding atas*/
+  padding-bottom: 40px; /* padding bawah*/
+  padding-right: 50px; /* padding kanan*/
+
+  /* margin */
+  margin-top: 20px; /* margin atas */
+  margin-bottom: 30px; /* margin bawah*/
+  margin-left: 40px; /* margin kiri */
+  margin-right: 50px; /* margin kanan */
+}
+.container-p1 {
+  background-color: purple;
+  width: 400px;
+  height: 600px;
+  margin: auto; /* margin auto berada di tengah */
+}
