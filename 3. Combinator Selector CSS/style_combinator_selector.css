@@ -1,0 +1,104 @@
+/* Combinator Selector  (dipakai untuk memilih elemen berdasarkan hubungan Struktur HTML */
+
+/* Note: Kombinator ini bisa di kombinasikan dengan class, element, id selector, dan atribute selector */
+
+/* 1. Spesific Selector ''  -->  konsepnya seperti AND, yaitu Style bisa di gunakan untuk selector yg sangat spesific dengan menyebut selectornya tanpa spasi */
+
+p.paragraf-1#paragraf-1 {      /* Beri Style pada semua element tag <p> yang memiliki atribut 'class' & 'id' bernama 'paragraf-1' */
+  color: darkcyan;
+  font-size: 20;
+}
+
+cite.name-character {     /* Beri Style pada semua element tag <cite> yang memiliki atribut 'class' bernama 'name-character' */
+  color: teal;
+  font-style: italic;
+  font-weight: bold;
+}
+
+q.character-saying {     /* Beri Style pada semua element tag <q> yang memiliki atribut 'class' bernama 'character-saying' */
+  color: darkgreen;
+  font-weight: bold;
+}
+
+/* 2. Grouping Selector ','  -->  konsepnya seperti OR, yaitu Sebuah Style bisa di gunakan pada banyak selectordengan memisahkan setiap selector dengan koma ',' */
+
+p.parag-1, input.input-1[type='text'], button.button-1 {     /* Beri Style pada semua element tag <p> dengan class bernama 'paragraf-1', <input> dengan class bernama 'input-1', dan <button> dengan class bernama 'button-1' */
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+}
+
+/* 3. Descendant ' '  -->  Keturunan, biasanya digunakan untuk memilih element yang lebih spesifik pada selector */
+
+.descendant article p {     /* Beri Style dimana pada semua element tag <p> yg merupakan keturunan dari tag <article>, lalu tag <article> merupakan keturunan juga dari element dengan class bernama 'descendant' */
+  font-size: 20px;
+}
+
+.descendant article p cite {     /* Beri Style dimana pada semua element tag <cite> yg merupakan keturunan dari tag <p>, lalu tag <p> harus keturunan dari tag <article>, dan <article> harus keturunan dari element dengan class bernama 'descendant' */
+  color: teal;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.descendant article p q {     /* Beri Style dimana pada semua element tag <q> yg merupakan keturunan dari tag <p>, lalu tag <p> juga keturunan dari tag <article>, dan <article> juga keturunan dari element dengan class bernama 'descendant' */
+  color: deepskyblue;
+  font-weight: bold;
+}
+
+/* 4. Child '>'  -->  Anak langsung, biasanya digunakan untuk memilih element yang lebih spesifik pada selector dan tidak berlaku untuk nested lebih dalam */
+
+.child article > p {     /* Beri Style pada semua element tag <p> yg harus merupakan Children dari tag <article>, dan <article> harus keturunan dari element dengan class bernama 'child' */
+  font-size: 20px;
+}
+
+.child > article > p > cite {     /* Beri Style pada semua element tag <cite> yg harus Children dari tag <p>, lalu tag <p> harus Children dari tag <article>, dan tag <article> harus Children dari element dengan class bernama 'child' */
+  color: blueviolet;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.child article p > q {     /* Beri Style pada semua element tag <q> yg harus Children dari tag <p>, lalu tag <p> harus keturunan dari tag <article>, dan tag <article> harus juga keturunan dari element dari class bernama 'child' */
+  color: purple;
+  font-weight: bold;
+}
+
+/* 5. Adjacent Sibling '+'  -->  Adjacent Sibling itu adalah element yg merupakan saudara, tetapi yg dipilih itu saudara yg berada langsung setelah element sebelumnya pada Selector */
+
+.adjacent-sibling #article h3 + p {     /* Beri Style pada semua element tag <p> yg harus saudara dan berada setelah tag <h3>, lalu tag <h3> harus keturunan dari element dengan id 'article', dan element dengan id 'article' harus keturunan dari element dengan class 'adjacent-sibling' */
+  font-size: 20px;
+}
+
+.adjacent-sibling #article h3 + p > q {     /* Beri Style pada semua element tag <q> yg harus Children dari tag <p>, lalu tag <p> harus saudara dan berada setelah tag <h3>, lalu tag <h3> harus keturunan dari element dengan id 'article', dan element dengan id 'article' harus keturunan dari element dengan class 'adjacent-sibling' */
+  color: navy;
+  font-weight: bold;
+}
+
+.adjacent-sibling #article h3 + p > cite {     /* Beri Style pada semua element tag <cite> yg harus Children dari tag <p>, lalu tag <p> harus saudara dan berada setelah tag <h3>, lalu tag <h3> harus keturunan dari element dengan id 'article', dan element dengan id 'article' harus keturunan dari element dengan class 'adjacent-sibling' */
+  color: darkcyan;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+  Note untuk Sibling ini:
+  - Harus saudara
+  - Harus langsung setelahnya
+  - Tidak boleh ada elemen lain di tengah
+*/
+
+/* 6. General Sibling '~'  -->  General Sibling itu adalah pilih semua element yg merupakan saudara dari element sebelumnya */
+
+.general-sibling #article h3 ~ p {     /* Beri Style pada semua element tag <p> yang merupakan saudara dari tag <h3>, lalu tag <h3> harus keturunan dari element dengan id 'article', dan element dengan id 'article' harus keturunan dari element dengan class 'general-sibling' */
+  font-size: 20px;
+}
+
+.general-sibling #article h3 ~ p > q {     /* Beri Style pada semua element tag <q> yg harus Children dari tag <p>, lalu semua tag <p> yang merupakan saudara dari tag <h3>, lalu tag <h3> harus keturunan dari element dengan id 'article', dan element dengan id 'article' harus keturunan dari element dengan class 'general-sibling' */
+  color: navy;
+  font-weight: bold;
+}
+
+.general-sibling #article h3 ~ p > cite {     /* Beri Style pada semua element tag <cite> yg harus Children dari tag <p>, lalu semua tag <p> yang merupakan saudara dari tag <h3>, lalu tag <h3> harus keturunan dari element dengan id 'article', dan element dengan id 'article' harus keturunan dari element dengan class 'general-sibling' */
+  color: teal;
+  font-style: italic;
+  font-weight: bold;
+}

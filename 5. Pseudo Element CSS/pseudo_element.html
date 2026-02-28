@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+    <link rel="stylesheet" href="style_pseudo_element.css" />
+  </head>
+  <body>
+    <h2>Pseudo Element</h2>
+
+    <div>
+      <h3>1. First Element</h3>     <!-- element::first-letter  (Pseudo Style yg hanya dapat di gunakan pada huruf pertama dari teks di dalam element) -->
+
+      <p class="first-letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>2. First Line</h3>     <!-- element::first-line  (Pseudo Style yg hanya dapat di gunakan pada baris pertama dari teks di dalam element) -->
+
+      <p class="first-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, nihil hic neque soluta quo optio quasi dignissimos atque impedit excepturi praesentium, expedita necessitatibus, debitis accusantium quam corrupti consequuntur nostrum incidunt? Dolorum pariatur nihil maiores quasi, eum minus mollitia, libero consectetur distinctio autem animi, consequuntur ad nemo. Quos expedita dolorem rerum?</p>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>3. Before</h3>     <!-- element::before  (Pseudo Style yg hanya dapat di gunakan sebelum isi element) -->
+
+      <p class="before-line">Belajar CSS dengan Giat</p>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>4. After</h3>     <!-- element::after  (Pseudo Style yg hanya dapat di gunakan sesudah isi element) -->
+
+      <p class="after-line">Selamat Belajar CSS dengan Giat</p>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>5. Selection</h3>     <!-- element::selection  (Pseudo Style yg hanya dapat di gunakan saat teks di sorot mouse) -->
+
+      <p class="line-selection">Selamat Belajar CSS dengan Giat</p>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>6. Placeholder</h3>     <!-- element::placeholder  (Pseudo Style yg hanya dapat di gunakan pada placeholder pada element inputan) -->
+
+      <input type="text" class="input-placeholder" placeholder="Ini Placeholder Teks Pada Inputan">
+    </div>
+
+    <br>
+
+    <div>
+      <h3>7. Marker</h3>     <!-- element::marker  (Pseudo Style yg hanya dapat di gunakan pada marker dari element list) -->
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <br>
+
+      <ol>
+        <li>Login</li>
+        <li>Dashboard</li>
+        <li>Logout</li>
+      </ol>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>8. File Selector Button</h3>     <!-- element::file-selector-button  (Pseudo Style yg hanya dapat di gunakan pada element inputan jenis 'file') -->
+
+      <label for="input-file">Pilih File</label>
+      <input type="file" id="input-file">
+    </div>
+
+    <br>
+
+    <div>
+      <h3>9. Backdrop</h3>     <!-- element::backdrop  (Pseudo Style yg hanya dapat di gunakan pada backdrop dari element yang memiliki 'modal' atau 'dialog') -->
+
+      <dialog id="openDialog">
+        <form method="dialog">
+          <p>Ini adalah dialog</p>
+          <button type="submit">Tutup</button>
+        </form>
+      </dialog>
+
+      <button onclick="openDialog.showModal()">
+        Buka Dialog
+      </button>
+    </div>
+  </body>
+</html>

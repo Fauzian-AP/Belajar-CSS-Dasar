@@ -1,0 +1,73 @@
+/* Attribute Selector adalah selector CSS yang memilih elemen HTML berdasarkan atribut yang dimilikinya. */
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+/* Berikut Beberapa Atribute Selector: */
+
+/* 1. element[attr]  -->  Style akan digunakan pada element HTML yang mempunyai atribut yg sesuai dengan 'attr' nya */
+
+input[required] {       /* Hanya <input> yang memiliki atribut 'required' saja yang terkena style ini */
+    background-color: darkblue;
+    color: white;
+}
+
+/* 2. element[attr=value]  -->  Style akan digunakan pada element yg isi / value dari atributnya sama persis dengan value yg ada pada Selector */
+
+input[type="email"] {     /* Hanya <input> dengan atribut 'type' nya berisi 'email' saja yang terkena style ini */
+    background-color: teal;
+    color: azure;
+}
+
+/* 3. element[attr^=value]  -->  Simbol ^ artinya starts with (diawali dengan), yg berarti Style akan digunakan pada element yang punya atribut dimana value-nya harus sama di bagian awal dengan value yg ada pada Selector */
+
+a[href^="https"] {     /* Hanya <a> yang atribut 'href' nya diawali dengan 'https' saja yang terkena style ini */
+    color: teal;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* 4. element[attr$=value]  -->  Simbol $ artinya ends with (diakhiri dengan), yg berarti Style akan digunakan pada element yang punya atribut dimana value-nya harus sama di bagian akhirnya dengan value yg ada pada Selector */
+
+img[src$=".png"] {     /* Hanya <img> yang atribut 'src' nya diakhiri dengan '.png' saja yang terkena style ini */
+    background-color: cyan;
+    border-radius: 10px;
+}
+
+/* 5. element[attr*=value]  -->  Simbol * artinya contains (mengandung), yg berarti Style akan digunakan pada element yang punya atribut dimana value-nya harus ada kata yg sesuai dengan value pada Selector */
+
+input[name*="user"] {     /* Hanya <input> yang name-nya mengandung 'user' saja yang terkena style ini (Contoh: value-nya 'username' tetap bisa, karena ada kata 'user' nya) */
+    background-color:darkgray;
+    color: darkblue;
+    border-radius: 10px;
+}
+
+/* 6. element[attr~=value]  -->  Simbol ~= artinya contains (mengandung), tapi element yang di pilih itu atribut dimana value-nya itu ada kata yg sesuai dengan value pada Selector, tetapi harus ada pemisahan lewat spasi di awal dan akhir kata value-nya agar di anggap sesuai */
+
+button[class~="active"] {     /* Hanya <input> yang atribut 'class' nya mengandung 'active' dan di pisah dengan spasi saja yang terkena style ini (Contoh: value class sebuah element misal 'button active click', nah ini sesuai karena kata 'active' dipisahkan dengan spasi di bagian awal dan akhir kata nya. Sedangkan kalau semisal isi nya 'inactive', nah ini tidak sesuai karena kata 'active itu harus ada jarak spasi di awal dan akhir) */
+    background-color:darkblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* 7. element[attr|=value]  -->  Simbol |= artinya contains (mengandung), tapi yg terpilih itu element yang punya atribut dengan value dimana pencocokan value itu dengan Prefix Khusus (value + '-') */
+
+.button-lang[lang|="en"] {     /* Hanya <input> yang class-nya mengandung 'en' yg dipisahkan dengan tanda '-' saja yang terkena style ini */
+    background-color:crimson;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* 8. element[attr=value i]  -->  Secara default, beberapa atribut sensitif huruf besar kecil. Tapi kamu bisa pakai 'i' agar tidak peduli value atributnya memiliki huruf besar/kecil */
+
+button[title="Google" i] {     /* Hanya tag <p> dengan atribute 'title' berisi 'Google' tidak peduli huruf besar/kecil tetap akan terkena style ini */
+    color: blue;
+    font-weight: bold;
+}
+
+

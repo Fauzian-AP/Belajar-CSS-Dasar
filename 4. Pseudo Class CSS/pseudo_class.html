@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class</title>
+    <link rel="stylesheet" href="style_pseudo_class.css" />
+  </head>
+  <body>
+    <h2>A. Pseudo Class Interaktif</h2>
+
+    <div>
+      <h3>1. Link</h3>     <!-- element:link  (Pseudo Style yg hanya dapat di gunakan pada tag '<a>' saja, dan style berjalan saat link belum pernah dikunjungi) -->
+
+      <a href="https://www.youtube.com" class="link">YouTube</a>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>2. Visited </h3>     <!-- element:visited  (Pseudo Style yg hanya dapat di gunakan pada tag '<a>' saja, dan style akan berjalan saat link sudah pernah dikunjungi) -->
+
+      <a href="http://github.com" class="visited">GitHub</a>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>3. Hover</h3>     <!-- element:hover  (Pseudo Style baru dapat digunakan saat mouse diarahkan ke elemen) -->
+
+      <button class="button-hover">
+        Hover Me
+      </button>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>4. Active</h3>     <!-- element:active  (Pseudo Style baru dapat digunakan saat elemen sedang diklik (belum dilepas)) -->
+
+      <button class="button-active">
+        Press Me
+      </button>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>5. Focus</h3>     <!-- element:focus  (Pseudo Style baru dapat digunakan saat elemen mendapat fokus (klik input / tab keyboard)) -->
+
+      <input type="text" class="input-focus" placeholder="Click Me">
+    </div>
+
+    <br>
+
+    <div>
+      <h3>6. Focus Visible</h3>     <!-- element:focus-visible  (Mirip seperti pseudo :focus, tapi hanya aktif jika fokus dari keyboard (aksesibilitas)) -->
+
+      <input type="text" class="input-focus-visible" placeholder="Click Me">
+    </div>
+
+    <br>
+
+    <h2>B. Pseudo Class Struktural</h2>
+
+    <br>
+
+    <div>
+      <h3>1. First Child</h3>     <!-- element:first-child  (Pseudo Style baru dapat digunakan ketika ada banyak element yg sama, tetapi yg digunakan itu adalah element yg paling pertama) -->
+
+      <ul>
+        <li class="first-child">Item 1</li>     <!-- List ini yg akan terkena style -->
+        <li class="first-child">Item 2</li>
+        <li class="first-child">Item 3</li>
+        <li class="first-child">Item 4</li>
+      </ul>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>2. Last Child</h3>     <!-- element:last-child  (Pseudo Style baru dapat digunakan ketika ada banyak element yg sama, tetapi yg digunakan itu adalah element yg paling terakhir) -->
+
+      <ul>
+        <li class="last-child">Item 1</li>
+        <li class="last-child">Item 2</li>
+        <li class="last-child">Item 3</li>
+        <li class="last-child">Item 4</li>     <!-- List ini yg akan terkena style -->
+      </ul>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>3. Nth Child</h3>     <!-- element:nth-child(n)  (Pseudo Style baru dapat digunakan ketika ada banyak element yg sama, tetapi yg digunakan itu adalah element ke-n (n = angka)) -->
+
+      <ul>
+        <li class="nth-child">Item 1</li>
+        <li class="nth-child">Item 2</li>
+        <li class="nth-child">Item 3</li>
+        <li class="nth-child">Item 4</li>
+      </ul>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>4. Nth Of Type</h3>     <!-- element:nth-of-type(n)  (Sama seperti nth-child, tetapi menghitung elementnya berdasarkan jenis tag yang sama saja) -->
+
+      <div>
+        <p>Paragraf 1</p>
+        <span>Span</span>
+        <p>Paragraf 2</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>5. Only Child</h3>     <!-- element:only-child  (Pseudo Style baru dapat digunakan ketika elementnya merupakan satu-satunya anak) -->
+
+      <div>
+        <p>Paragraf 1</p>
+      </div>
+    </div>
+
+    <br>
+
+    <h2>C. Pseudo Class Negatif</h2>
+
+    <div>
+      <h3>1. Not</h3>     <!-- element:not()  (Pseudo Style yg digunakan itu semua element kecuali yang disebut di pseudo :not nya) -->
+
+      <div class="not-element">
+        <input type="text" placeholder="Input Text">
+
+        <br><br>
+
+        <input type="password" placeholder="Input Password">
+
+        <br><br>
+
+        <input type="email" placeholder="Input Email">
+      </div>
+    </div>
+
+    <br>
+
+    <h2>D. Pseudo Class Form</h2>
+
+    <div>
+      <h3>1. Checked</h3>     <!-- element:checked  (Pseudo Style yg digunakan ketika inputan checkbox / radio yang dicentang. -->
+
+      <div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Checkbox</label>
+
+        <br><hr>
+
+        <input type="radio" id="radio1" name="radio-group">
+        <label for="radio1">Radio 1</label>
+
+        <input type="radio" id="radio2" name="radio-group">
+        <label for="radio2">Radio 2</label>
+
+        <input type="radio" id="radio3" name="radio-group">
+        <label for="radio3">Radio 3</label>
+      </div>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>2. Disabled</h3>     <!-- element:disabled  (Pseudo Style akan digunakan ketika element inputan-nya menggunakan atribute 'disabled') -->
+
+      <form>
+        <input type="text" class="input-disabled" placeholder="Input Disabled" value="Input Disabled" disabled>
+
+        <button type="submit" class="button-disabled" disabled>Klik Disabled</button>
+      </form>
+    </div>
+
+    <br>
+
+    <div class="enable">
+      <h3>3. Enabled</h3>     <!-- element:enabled  (Pseudo Style akan digunakan ketika element inputan-nya tidak menggunakan atribute 'disabled') -->
+
+      <form>
+        <input type="text" class="input-enabled" placeholder="Input Text">
+
+        <input type="number" class="input-enabled" placeholder="Input Number">
+
+        <button type="submit" class="button-enabled">Klik</button>
+      </form>
+    </div>
+
+    <br>
+
+    <div class="required">
+      <h3>3. Required</h3>     <!-- element:required  (Pseudo Style akan digunakan ketika element inputan-nya menggunakan atribute 'required') -->
+
+      <form>
+        <input type="text" placeholder="Input Required" required>
+
+        <button type="submit" class="button-required">Klik</button>
+      </form>
+    </div>
+
+    <br>
+
+    <div>
+      <h3>4. Valid & Invalid</h3>
+      
+      <!--
+        element:valid  (Pseudo Style akan digunakan ketika inputan sudah valid)
+        element:invalid  (Pseudo Style akan digunakan ketika inputan belum valid) 
+      -->
+
+      <form>
+        <input type="text" class="input-required" placeholder="Input Required" minlength="5" required> <br><br>
+
+        <input type="number" class="input-required" min="10" max="20" placeholder="Input" required> <br><br>
+
+        <input type="email" class="input-required" placeholder="Masukkan email" required> <br><br>
+
+        <button type="submit" class="button-required">Klik</button>
+      </form>
+    </div>
+
+    <br>
+
+    <h2>E. Pseudo Class Lain</h2>
+
+    <div>
+      <h3>1. Empty</h3>     <!-- element:empty  (Pseudo Style akan digunakan ketika isi dari elementnya kosong) -->
+
+      <div class="empty-element"></div>
+    </div>
+
+    <br>
+
+    <div class="target">
+      <h3>2. Target</h3>     <!-- element:target  (Pseudo Style akan digunakan ketika element memiliki atribute 'id' yang valuenya sesuai dengan value pada atribute identifier di URL) -->
+
+      <a href="#target-element">Klik untuk Menargetkan Element</a>
+
+      <br><br>
+
+      <div id="target-element" class="target-element">Ini adalah element yang ditargetkan</div>
+    </div>
+  </body>
+</html>

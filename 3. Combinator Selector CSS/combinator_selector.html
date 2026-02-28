@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <link rel="stylesheet" href="style_combinator_selector.css">
+  </head>
+  <body>
+    <h1>Combinator Selector</h1>
+
+    <div class="spesific">
+      <h2>1. Spesific Selector ''</h2>         <!-- Dan -->
+
+      <p class="paragraf-1" id="paragraf-1">
+        <cite class="name-character">Nelson Mandela</cite> Mengatakan : <q class="character-saying">Pendidikan adalah senjata paling ampuh untuk mengubah dunia.</q>
+      </p>
+    </div>
+
+    <br>
+
+    <div class="grouping">
+      <h2>2. Grouping Selector ','</h2>         <!-- Atau -->
+
+      <p class="parag-1">
+        <cite>Username 1</cite> Mengatakan : <q>Pertama harus Belajar HTML Dahulu!</q>
+      </p>
+
+      <input type="text" class="input-1" placeholder="Belajar CSS" value="Belajar CSS">
+
+      <button type="button" class="button-1">Belajar JavaScript</button>
+    </div>
+
+    <br>
+
+    <div class="descendant">
+      <h2>3. Descendant ' '</h2>         <!-- Keturunan -->
+
+      <article>
+        <p>     <!-- Contoh Keturunan adalah ini: Tag <p> adalah keturunan dari tag <article>, dan <article> adalah keturunan dari element dengan class bernama 'descendant' -->
+          <cite>Username 1</cite> Mengatakan : <q>Pertama harus Belajar HTML Dahulu!</q>
+        </p>
+
+        <div class="children-1">
+          <p>     <!-- Contoh Keturunan adalah ini: Tag <p> adalah keturunan dari tag <article>, tidak peduli ada tag <div> di parentnya, yg penting merupkaan keturunan dari tag <article> -->
+            <cite>Username 2</cite> Mengatakan : <q>Setelah Paham HTML, baru Belajar CSS</q>
+          </p>
+
+          <span class="children-2">
+            <p>     <!-- Contoh Keturunan adalah ini: Tag <p> adalah keturunan dari tag <article>, tidak peduli ada tag <div> di parentnya, yg penting merupkaan keturunan dari tag <article> -->
+              <cite>Username 3</cite> Mengatakan : <q>Terakhir baru Belajar JavaScript</q>
+            </p>
+          </span>
+        </div>
+      </article>
+    </div>
+
+    <br>
+
+    <div class="child">
+      <h2>4. Child '>'</h2>  <!-- Children -->
+
+      <article>
+        <p>     <!-- Contoh Child adalah ini: Tag <p> adalah child langsung dari tag <article>, dan tag <article> juga child langsung dari tag <div> dengan class bernama 'child' -->
+          <cite>Username 1</cite> Mengatakan : <q>Pertama harus Belajar HTML Dahulu!</q>
+        </p>
+
+        <div class="children-1">
+          <p>
+            <cite>Username 2</cite> Mengatakan : <q>Setelah Paham HTML, baru Belajar CSS</q>
+          </p>
+
+          <div class="children-2">
+            <p>
+              <cite>Username 3</cite> Mengatakan : <q>Terakhir baru Belajar JavaScript</q>
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <br>
+
+    <div class="adjacent-sibling">
+      <h2>5. Adjacent Sibling '+'</h2>  <!-- Saudara langsung setelahnya -->
+
+      <article id="article">
+        <h3>Bagaimana Cara Belajar Dasar Web?</h3>
+
+        <p>     <!-- Contoh Adjacent Sibling adalah ini: Tag <p> adalah saudara langsung dari tag <h3> dan berada setelah tag <h3> -->
+          <cite>Username 1</cite> Mengatakan : <q>Pertama harus Belajar HTML Dahulu!</q>
+
+        <p>
+          <cite>Username 2</cite> Mengatakan : <q>Setelah Paham HTML, baru Belajar CSS</q>
+        </p>
+      </article>
+    </div>
+
+    <br>
+
+    <div class="general-sibling">
+      <h2>6. General Sibling '~'</h2>  <!-- Semua Saudaranya -->
+
+      <article id="article">
+        <h3>Bagaimana Cara Belajar Dasar Web?</h3>
+
+        <p>     <!-- Contoh General Sibling adalah ini: Tag <p> adalah saudara dari tag <h3> -->
+          <cite>Username 1</cite> Mengatakan : <q>Pertama harus Belajar HTML Dahulu!</q>
+
+        <p>     <!-- Contoh General Sibling adalah ini: Tag <p> adalah saudara dari tag <h3> -->
+          <cite>Username 2</cite> Mengatakan : <q>Setelah Paham HTML, baru Belajar CSS</q>
+        </p>
+
+        <p>
+          <cite>Username 3</cite> Mengatakan : <q>Terakhir baru Belajar JavaScript</q>
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

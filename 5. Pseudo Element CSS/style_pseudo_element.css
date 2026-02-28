@@ -1,0 +1,100 @@
+/* Pseudo Element '::' (Style CSS yg akan “membuat bagian tambahan” atau “menargetkan bagian kecil” dari elemen HTML tanpa harus menambah tag baru di HTML) */
+
+/* Berikut beberapa Pseudo Element yg sering di gunakan: */
+
+/* 1. element::first-letter  -->  Style akan digunakan pada huruf pertama dari teks di dalam element */
+
+.first-letter::first-letter {
+  font-size: 30px;
+  color: purple;
+  font-weight: bold;
+}
+
+/* 2. element::first-line  -->  Style akan digunakan pada baris pertama dari teks di dalam element (Bukan kalimat pertama, tapi baris pertama sesuai lebar container) */
+
+.first-line::first-line {
+  font-size: 20px;
+  font-weight: bold;
+  color: teal;
+}
+
+/* 3. element::before  -->  Menambahkan Konten & Style baru sebelum isi element (Ini bukan element asli di HTML, lebih seperti elemen “virtual” */
+
+.before-line::before {
+  content: "Hello,";     /*  Untuk menambahkan konten baru, kita bisa menggunakan property 'content' dengan nilai teks yang ingin ditambahkan. */
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+
+/* 4. element::after  -->  Menambahkan Konten & Style baru setelah isi element (Ini juga bukan element asli di HTML, lebih seperti elemen “virtual” */
+
+.after-line::after {
+  content: "Yeayy!";     /*  Untuk menambahkan konten baru, kita bisa menggunakan property 'content' dengan nilai teks yang ingin ditambahkan. */
+  background-color: lightblue;
+  color: navy;
+  font-weight: bold;
+}
+
+/* 5. element::selection  -->  Style hanya akan digunakan pada fitur Seleksi (disorot mouse) */
+
+.line-selection::selection {
+  background-color: lightblue;
+  color: navy;
+}
+
+/* 6. element::placeholder  -->  Style hanya akan digunakan pada placeholder pada element inputan */
+
+.input-placeholder {
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.input-placeholder::placeholder {
+  color: gray;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* 7. element::marker  -->  Style hanya akan digunakan pada marker dari element list */
+
+ul li::marker {
+  color: purple;
+  font-weight: bold;
+}
+
+ol li::marker {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Note: marker hanya bisa ubah Style color, font-size, font-weight, font-style, content (terbatas) */
+
+/* 8. element::file-selector-button  -->  Style hanya akan digunakan pada element inputan jenis 'file' */
+
+input::file-selector-button {
+  background-color: lightblue;
+  color: navy;
+  font-weight: bold;
+  padding: 3px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input::file-selector-button:hover {     /* Pseudo Element ini bisa di kombinasikan dengan Psudo Class juga */
+  background: darkblue;
+  color: white;
+  cursor: pointer;
+}
+
+/* Note: file-selector-button hanya bisa ubah Style secara terbatas*/
+
+/* 9. element::backdrop  -->  Pseudo Style yg hanya dapat di gunakan pada backdrop dari element yang memiliki 'modal' atau 'dialog' */
+
+dialog::backdrop {     /* Style akan digunakan pada backdrop (latar belakang) dari element dialog atau modal */
+  background: navy;   
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute Selector CSS</title>
+    <link rel="stylesheet" href="style_atribute_selector.css">
+</head>
+<body>
+    <!-- Attribute Selector (Selector CSS yang memilih elemen HTML berdasarkan atribut yang dimilikinya) -->
+
+    <h3>1. Selector Pola: element[attr]</h3>
+
+    <input type="text" placeholder="input ini kena" required>
+    <input type="password" placeholder="input ini kena" required>
+    <input type="text" placeholder="input ini tidak kena">
+
+    <br><br><br>
+
+    <h3>2. Selector Pola: element[attr=value]</h3>
+
+    <input type="text" placeholder="input ini tidak kena">
+    <input type="text" placeholder="input ini tidak kena">
+    <input type="email" placeholder="input ini kena">
+
+    <br><br><br>
+
+    <h3>3. Selector Pola: element[attr^=value]</h3>
+
+    <a href="https://www.google.com">https://www.google.com</a> |
+    <a href="https://www.facebook.com">https://www.facebook.com</a> |
+    <a href="http://example.com">http://example.com</a> |
+
+    <br><br><br>
+
+    <h3>4. Selector Pola: element[attr$=value]</h3>
+
+    <img src="../img/html_logo.png" alt="HTML Logo">
+    <img src="../img/css_logo.png" alt="CSS Logo">
+    <img src="../img/javascript_logo.jpg" alt="JavaScript Logo">
+
+    <h3>5. Selector Pola: element[attr*=value]</h3>
+
+    <input type="text" placeholder="Nama Username" name="UserName">
+    <input type="text" placeholder="alamat Username" name="USERNAME">
+    <input type="text" placeholder="alamat Username" name="username">
+
+    <br><br><br>
+
+    <h3>6. Selector Pola: element[attr~=value]</h3>
+
+    <button class="box active click">Klik</button>
+    <button class="inactive click">Klik</button>
+
+    <br><br><br>
+
+    <h3>7. Selector Pola: element[attr|=value]</h3>
+
+    <button class="button-lang" lang="en-US">Hello US</button>
+    <button class="button-lang" lang="en-GB">Hello GB</button>
+    <button class="button-lang" lang="fr-FR">Bonjour</button>
+
+    <br><br><br>
+
+    <h3>8. Selector Pola dgn Case Khusus: element[attr=value i]</h3>
+
+    <button title="Google">Google</button>
+    <button title="GOOGLE">GOOGLE</button>
+    <button title="google">google</button>
+
+</body>
+</html>
